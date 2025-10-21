@@ -8,11 +8,11 @@ export default createMiddleware({
   // デフォルト言語
   defaultLocale: 'ja',
 
-  // 言語検出を有効化
-  localeDetection: true,
+  // 静的エクスポートのため言語検出を無効化
+  localeDetection: false,
 
-  // ロケールプレフィックス設定
-  localePrefix: 'as-needed',
+  // すべてのロケールをパスに含める
+  localePrefix: 'always',
 });
 
 export const config = {

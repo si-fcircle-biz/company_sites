@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Hero } from '@/components/sections/hero';
 import { ServiceCard } from '@/components/sections/service-card';
 import { CaseStudyCard } from '@/components/sections/case-study-card';
@@ -11,12 +11,18 @@ import { news } from '@/data/news';
 import Link from 'next/link';
 import { ArrowRight, Building2, Users, Award, MapPin } from 'lucide-react';
 
-export default function HomePage() {
-  const t = useTranslations('hero');
-  const tServices = useTranslations('services');
-  const tCaseStudies = useTranslations('caseStudies');
-  const tNews = useTranslations('news');
-  const tCommon = useTranslations('common');
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export default async function HomePage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations('hero');
+  const tServices = await getTranslations('services');
+  const tCaseStudies = await getTranslations('caseStudies');
+  const tNews = await getTranslations('news');
+  const tCommon = await getTranslations('common');
 
   return (
     <MainLayout>

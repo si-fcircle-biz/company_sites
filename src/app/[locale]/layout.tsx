@@ -1,6 +1,6 @@
 import { Inter, Noto_Sans_JP } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import '@/styles/globals.css';
 import { locales } from '@/i18n';
@@ -87,15 +87,20 @@ export const metadata = {
 
 export default async function LocaleLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
+
   // ロケール検証
   if (!locales.includes(locale as any)) {
     notFound();
   }
+
+  // 静的エクスポート用にlocaleを設定
+  setRequestLocale(locale);
 
   const messages = await getMessages();
 
