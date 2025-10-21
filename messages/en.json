@@ -1,0 +1,90 @@
+{
+  "common": {
+    "siteName": "F-Circle",
+    "siteDescription": "System Integrator Accelerating DX",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "contactUs": "Contact Us",
+    "requestDocument": "Request Documents",
+    "learnMore": "Learn More",
+    "backToTop": "Back to Top"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "industries": "Industries",
+    "caseStudies": "Case Studies",
+    "news": "News",
+    "about": "About",
+    "careers": "Careers",
+    "contact": "Contact"
+  },
+  "footer": {
+    "companyInfo": "Company",
+    "services": "Services",
+    "support": "Support",
+    "followUs": "Follow Us",
+    "copyright": "© {year} F-Circle Inc. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "security": "Security Policy"
+  },
+  "hero": {
+    "title": "Your Trusted Partner\nfor Digital Transformation",
+    "subtitle": "From system development to cloud migration and data utilization,\nwe comprehensively support your digital transformation.",
+    "ctaPrimary": "Contact Us",
+    "ctaSecondary": "Request Service Materials"
+  },
+  "services": {
+    "title": "Services",
+    "description": "We provide optimal solutions tailored to your business challenges"
+  },
+  "caseStudies": {
+    "title": "Case Studies",
+    "description": "Success stories from over 500 implementations",
+    "challenge": "Challenge",
+    "solution": "Solution",
+    "results": "Results",
+    "client": "Client",
+    "industry": "Industry",
+    "period": "Period"
+  },
+  "news": {
+    "title": "News",
+    "latest": "Latest News",
+    "category": {
+      "press": "Press Release",
+      "release": "Product Release",
+      "event": "Event",
+      "media": "Media Coverage",
+      "ir": "IR Information"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Feel free to contact us. Our specialists will assist you.",
+    "form": {
+      "type": "Inquiry Type",
+      "companyName": "Company Name",
+      "department": "Department",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "privacy": "I agree to the Privacy Policy",
+      "submit": "Submit",
+      "submitting": "Submitting..."
+    },
+    "types": {
+      "inquiry": "Service Inquiry",
+      "document": "Request Documents",
+      "support": "Support",
+      "other": "Other"
+    },
+    "success": {
+      "title": "Submission Complete",
+      "message": "Thank you for your inquiry.\nOur team will contact you within 3 business days.",
+      "backToHome": "Back to Home"
+    }
+  }
+}
