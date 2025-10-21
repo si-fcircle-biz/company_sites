@@ -69,6 +69,24 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
+      - name: Create index.html redirect
+        run: |
+          cat > ./out/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta charset="utf-8">
+            <meta http-equiv="refresh" content="0; url=/company_sites/ja">
+            <link rel="canonical" href="/company_sites/ja" />
+            <script>window.location.href = '/company_sites/ja';</script>
+          </head>
+          <body>
+            <p>Redirecting to <a href="/company_sites/ja">/company_sites/ja</a>...</p>
+          </body>
+          </html>
+          EOF
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

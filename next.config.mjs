@@ -5,6 +5,7 @@ const withNextIntl = createNextIntlPlugin('./src/i18n.ts');
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  basePath: '/company_sites',
 
   images: {
     unoptimized: true, // Required for static export
