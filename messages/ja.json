@@ -1,0 +1,90 @@
+{
+  "common": {
+    "siteName": "F-Circle",
+    "siteDescription": "DX推進を加速するシステムインテグレーター",
+    "readMore": "詳しく見る",
+    "viewAll": "すべて見る",
+    "contactUs": "お問い合わせ",
+    "requestDocument": "資料請求",
+    "learnMore": "もっと詳しく",
+    "backToTop": "トップへ戻る"
+  },
+  "nav": {
+    "home": "ホーム",
+    "services": "サービス",
+    "industries": "業種別ソリューション",
+    "caseStudies": "導入事例",
+    "news": "お知らせ",
+    "about": "企業情報",
+    "careers": "採用情報",
+    "contact": "お問い合わせ"
+  },
+  "footer": {
+    "companyInfo": "企業情報",
+    "services": "サービス",
+    "support": "サポート",
+    "followUs": "フォローする",
+    "copyright": "© {year} F-Circle Inc. All rights reserved.",
+    "privacy": "プライバシーポリシー",
+    "security": "セキュリティ方針"
+  },
+  "hero": {
+    "title": "DXを加速する、\n信頼のパートナー",
+    "subtitle": "システム開発からクラウド移行、データ活用まで、\n企業のデジタル変革を総合的に支援します",
+    "ctaPrimary": "お問い合わせ",
+    "ctaSecondary": "サービス資料請求"
+  },
+  "services": {
+    "title": "サービス",
+    "description": "お客様のビジネス課題に応じた最適なソリューションを提供します"
+  },
+  "caseStudies": {
+    "title": "導入事例",
+    "description": "500社以上の実績から、成功事例をご紹介します",
+    "challenge": "課題",
+    "solution": "ソリューション",
+    "results": "成果",
+    "client": "クライアント",
+    "industry": "業種",
+    "period": "期間"
+  },
+  "news": {
+    "title": "お知らせ",
+    "latest": "最新のお知らせ",
+    "category": {
+      "press": "プレスリリース",
+      "release": "製品リリース",
+      "event": "イベント",
+      "media": "メディア掲載",
+      "ir": "IR情報"
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "description": "お気軽にご相談ください。専門スタッフが対応いたします。",
+    "form": {
+      "type": "お問い合わせ種別",
+      "companyName": "会社名",
+      "department": "部署名",
+      "name": "お名前",
+      "email": "メールアドレス",
+      "phone": "電話番号",
+      "subject": "件名",
+      "message": "お問い合わせ内容",
+      "privacy": "プライバシーポリシーに同意する",
+      "submit": "送信する",
+      "submitting": "送信中..."
+    },
+    "types": {
+      "inquiry": "サービスに関するお問い合わせ",
+      "document": "資料請求",
+      "support": "サポート",
+      "other": "その他"
+    },
+    "success": {
+      "title": "送信完了",
+      "message": "お問い合わせありがとうございます。\n担当者より3営業日以内にご連絡いたします。",
+      "backToHome": "ホームに戻る"
+    }
+  }
+}
